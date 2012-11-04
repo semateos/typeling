@@ -7,8 +7,8 @@ var Router = Backbone.Router.extend({
 	},
  	
  	routes: {
-		"": 		"index",
-		"shapes": 		"shapes",
+		"": 		"shapes",
+		"text": 	"index",
 		"import": 	"import"
 	},
 

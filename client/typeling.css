@@ -28,6 +28,10 @@ h2{
 	position: absolute;
 	top: 30px;
 	left: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+    -moz-user-select: none; 
+    -khtml-user-select: none;
 }
 
 #canvas{
