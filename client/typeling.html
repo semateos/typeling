@@ -1,0 +1,46 @@
+<head>
+  <title>typeling</title>
+</head>
+
+<body>
+  
+</body>
+
+<template name="logo">
+	<div id="logo">
+		<h1>typeling</h1>
+		<h2>click anywhere</h2>
+	</div>
+</template>
+
+<template name="hello">
+	{{> logo}}
+	
+	<div id="canvas">
+		
+		{{#each typelings}}
+        	{{> typeling}}
+        {{/each}}
+	</div>
+	
+</template>
+
+<template name="typeling">
+	{{#if text}}<input id="{{_id}}" style="top:{{top}};left:{{left}};" value="{{text}}"/>{{/if}}
+</template>
+
+<template name="shapes">
+	{{> logo}}
+	<div id="shapes">
+		
+		
+	</div>
+</template>
+
+<template name="import">
+	{{> logo}}
+	<div id="import">
+		<textarea></textarea>
+		<input type="submit" name="import" id="btn_import" value="Import"/>
+	</div>
+</template>

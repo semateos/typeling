@@ -1,0 +1,63 @@
+/* CSS declarations go here */
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background:#333;
+	color:#C5F012;
+	font-family: "Trebuchet MS";
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin:0;
+	font-size:24pt;
+}
+
+h2{
+	margin:0;
+	font-size:10pt;
+}
+
+#logo{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#canvas{
+	width: 100%;
+	height: 100%;
+}
+
+#canvas input{
+	position: absolute;
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 48px;
+	color:#C5F012;
+}
+
+#import{
+	padding: 100px 30px;
+}
+
+#import textarea{
+	display: block;
+	width: 500px;
+	height: 300px;
+}
+
+
+#shapes{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
