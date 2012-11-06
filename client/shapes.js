@@ -17,8 +17,14 @@ Template.shapes.events({
 		
 		var chars = Shapes.find().fetch();
 		
-		Session.set('colors', [randHex(), randHex(), randHex(), randHex()]);
+		var styles = Array();
 		
+		for(var i = 0; i < 4; i++){
+			
+			styles[i] = svg.style('.color-' + i + ' { fill: ' + randHex() + ' }', {id: 'color-' + i});
+		}
+		
+		Session.set('styles', styles);
 		
 		for(var i = 0; i < 100; i++){
 			
@@ -30,6 +36,7 @@ Template.shapes.events({
 	
 	'click #logo': function(event){
 		
+		
 		var svg = $('#shapes').svg('get');
 		
 		for(var i = 0; i < 5; i++){
@@ -38,9 +45,17 @@ Template.shapes.events({
 			
 		}
 		
-		
 		/*
+		$('#shapes').svg('destroy'); 
+		
+		$('#shapes').svg();
+		
+		var svg = $('#shapes').svg('get'); 
 		var colors = Session.get('colors');
+		var chars = Shapes.find().fetch();
+		
+		var s0 = svg.style('.color-0 { fill: ' + randHex() + ' } ...');
+		
 		
 		var g1 = svg.group();
 		var g2 = svg.group();
@@ -54,11 +69,11 @@ Template.shapes.events({
 		
 		var gs = $(svg.root).find('g');
 		
-		svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
-		svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
-		svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
-		svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
-		*/
+		svg.path(randFrom(gs), randFrom(chars).d, {class: 'color-0', stroke: 'none'});
+		//svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
+		//svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
+		//svg.path(randFrom(gs), randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
+		
 		
 		
 		
@@ -87,7 +102,7 @@ function mutate(svg){
 	
 	var gs = $(svg.root).find('g');
 	
-	var colors = Session.get('colors');
+	var styles = Session.get('styles');
 	
 	var chars = Shapes.find().fetch();
 	
@@ -135,9 +150,9 @@ function mutate(svg){
 			
 		case 5:
 			
-			//change color
+			//change class
 			
-			$(g).attr('fill', randFrom(colors));
+			$(g).attr('class', 'color-' + rand(0,3));
 			
 			break;
 		
@@ -166,11 +181,24 @@ function mutate(svg){
 			break;
 			
 		
+		case 8:
+			
+			//change a color
+			
+			var i = rand(0,3);
+						
+			$("#color-" + i).remove();
+			
+			svg.style('.color-' + i + ' { fill: ' + randHex() + ' }', {id: 'color-' + i});
+			
+			break;
+			
+		
 		default:
 		
 			//add a path
 			
-			svg.path(g, randFrom(chars).d, {fill: randFrom(colors), stroke: 'none'});
+			svg.path(g, randFrom(chars).d, {class: 'color-' + rand(0,3), stroke: 'none'});
 			
 			break;
 	
