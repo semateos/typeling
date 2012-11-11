@@ -67,10 +67,11 @@ h2{
 
 #shapes div{
 	float: left;
-	width: 48%;
-	height: 48%;
+	width: 48.3%;
+	height: 48.3%;
 	border: solid white 1px;
 	margin: 1% 0 0 1%;
+	overflow: hidden;
 }
 
 #shapes div svg{

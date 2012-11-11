@@ -13,14 +13,27 @@ Template.shapes.events({
 		
 		div.svg('destroy');
 		
-		var id = div.attr('id');
+		var dir_id = div.attr('id');
 		
 		//log(id);
 		
-		var typey = new Typeling(id);
+		var typey = new Typeling();
 		
-		typey.generate();
 		
+		function after_birth(err, id){
+			
+			typey.render('#' + dir_id);	
+		}
+		
+		typey.spawn(after_birth);
+		
+		
+		
+		
+		
+		//typey.store();
+		
+		//console.log(typey.svg.toSVG());
 		
 		
 	},
@@ -29,13 +42,7 @@ Template.shapes.events({
 	'click #logo': function(event){
 		
 		
-		var typey = new Typeling('#shapes');
 		
-		for(var i = 0; i < 5; i++){
-			
-			typey.mutate();
-			
-		}
 		
 		
 	}

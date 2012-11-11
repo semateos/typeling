@@ -1,4 +1,3 @@
-Shapes = new Meteor.Collection("shapes");
 
 Template.import.events({
 	

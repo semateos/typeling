@@ -13,22 +13,6 @@
 	</div>
 </template>
 
-<template name="hello">
-	{{> logo}}
-	
-	<div id="canvas">
-		
-		{{#each typelings}}
-        	{{> typeling}}
-        {{/each}}
-	</div>
-	
-</template>
-
-<template name="typeling">
-	{{#if text}}<input id="{{_id}}" style="top:{{top}};left:{{left}};" value="{{text}}"/>{{/if}}
-</template>
-
 <template name="shapes">
 	{{> logo}}
 	<div id="shapes">
