@@ -1,0 +1,37 @@
+<svg version="1.1" width="100%" height="100%" viewBox="0 0 2000 2000">
+	<style type="text/css" id="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-0">
+		.122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-0 {
+			fill: #f33017
+		}
+	</style>
+	<style type="text/css" id="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-1">
+			.122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-1 {
+				fill: #84a773
+			}
+	</style>
+	<style type="text/css" id="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-2">
+			.122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-2 {
+				fill: #1489a4
+			}
+	</style>
+	<style type="text/css" id="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-3">
+			.122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-3 {
+				fill: #a2d1a7
+			}
+	</style>
+	<g transform="rotate(45)" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-2">
+		<path d="M96 352v273h594v-273h-594z" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-0" stroke="none"/>
+		<g transform="scale(0.26538067704702484)" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-3">
+			<g transform="translate(1326,1470)" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-0"/>
+			<path d="M51 0v270h113v891h-113v271h664v-271h-127v-309h389v309h-121v271h666v-271h-119v-891h119v-270h-666v270h121v310h-389v-310h127v-270h-664z" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-2" stroke="none"/>
+		</g>
+		<g transform="translate(947,1767)">
+			<path d="M51 0v266h119v901h-119v265h764q502 0 502 -351q0 -131 -44 -201.5t-157 -115.5q121 -33 195.5 -120t74.5 -228q0 -217 -131 -316.5t-426 -99.5h-778zM594 266h164q68 0 117 48t49 128t-45 130.5t-127 50.5h-158v-357zM594 854h125q78 0 108.5 40t30.5 118 q0 70 -38 109.5t-97 39.5h-129v-307z" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-1" stroke="none"/>
+			<g transform="translate(1666,13)" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-1"/>
+			<path d="M-20 1169v263h700v-263h-107l119 -217q6 -16 33 -81.5t31 -84.5h8q4 18 76 177l112 206h-112v263h551v-263h-111l-379 -665v-238h115v-266h-656v266h117v242l-397 661h-100z" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-0" stroke="none"/>
+		</g>
+		<g transform="rotate(31)"/>
+	</g>
+	<path d="M123 659q0 86 63.5 160t168 74t170 -74t65.5 -160q0 -96 -62.5 -158.5t-173.5 -62.5q-98 0 -164.5 67.5t-66.5 153.5z" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-0" stroke="none"/>
+	<path d="M31 205l209 217q133 -133 270 -133q86 0 135 41t49 116q0 150 -170 150h-153v244h149q76 0 125 36.5t49 104.5q0 78 -54 120t-126 42q-123 0 -240 -123l-198 240q66 72 188.5 133t249.5 61q248 0 385 -117.5t137 -316.5q0 -143 -151 -260q190 -137 190 -336 q0 -213 -170 -332t-397 -119q-141 0 -278.5 70t-198.5 162z" class="122e4f62-f609-45e2-8b5a-f0e3a716ff13-color-2" stroke="none"/>
+</svg>
