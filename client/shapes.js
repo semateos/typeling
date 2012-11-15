@@ -1,9 +1,20 @@
 
 Template.shapes.typelings = function () {
-	return Typelings.find({}, {sort: ['$natural', -1]});
+	return Typelings.find({}, {sort: {created: -1}});
 };
 
 Template.shapes.events({
+	
+	'mouseover #shapes div': function(event){
+		
+		/*
+		var div = $(event.currentTarget);
+		
+		var div_id = div.attr('id');
+		
+		$('#detail').html(div.html());
+		*/
+	},
 	
 	'click #shapes div': function(event){
 		
@@ -11,37 +22,31 @@ Template.shapes.events({
 	
 		var div = $(event.currentTarget);
 		
-		div.svg('destroy');
+		var div_id = div.attr('id');
 		
-		var dir_id = div.attr('id');
+		$('#detail').html(div.html());
 		
-		//log(id);
-		
-		var typey = new Typeling({container: '#' + dir_id});
-		
+		var typey = new Typeling({container: '#' + div_id});
 		
 		function after_birth(err, id){
 			
 			//typey.render('#' + dir_id);	
 		}
 		
-		typey.replicate(after_birth);
+		for(var i = 0; i < 4; i++){
+			
+			typey.replicate(after_birth);
+		}
 		
-		
-		
-		
+		//typey.mutate();
 		
 		//typey.store();
 		
 		//console.log(typey.svg.toSVG());
-		
-		
 	},
 	
 	
 	'click #logo': function(event){
-		
-		var typey = new Typeling();
 		
 		
 		function after_birth_2(err, id){
@@ -49,14 +54,13 @@ Template.shapes.events({
 			//typey.render('#' + dir_id);	
 		}
 		
-		typey.spawn(after_birth_2);
-		
-		/*var typey = new Typeling({container: '#shape-1'});
-		
-		for(var i = 0; i < 5; i++){
+		for(var i = 0; i < 4; i++){
 			
-			typey.mutate();
-		}*/		
+			var typey = new Typeling();
+			
+			typey.spawn(after_birth_2);
+			
+		}
 		
 	}
 

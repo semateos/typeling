@@ -9,15 +9,16 @@
 <template name="logo">
 	<div id="logo">
 		<h1>typeling</h1>
-		<h2>click anywhere</h2>
+		<h2>click to evolve</h2>
 	</div>
 </template>
 
 <template name="shapes">
 	{{> logo}}
+	<div id="detail"></div>
 	<div id="shapes">
 		{{#each typelings}}
-			{{#if svg}}<div id="typeling-{{id}}">{{{svg}}}</div>{{/if}}
+			{{#if svg}}<div id="typeling-{{id}}" data-id="{{id}}">{{{svg}}}</div>{{/if}}
 		{{/each}}
 	</div>
 </template>

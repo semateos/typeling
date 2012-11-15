@@ -5,7 +5,7 @@ html{
 }
 
 body{
-	background:#333;
+	background:#222;
 	color:#C5F012;
 	font-family: "Trebuchet MS";
 	width: 100%;
@@ -25,13 +25,15 @@ h2{
 }
 
 #logo{
-	position: absolute;
-	top: 30px;
-	left: 30px;
+	position: fixed;
+	top: 50px;
+	left: 50px;
 	cursor: pointer;
 	-webkit-user-select: none;
     -moz-user-select: none; 
     -khtml-user-select: none;
+    cursor: pointer;
+    z-index: 100;
 }
 
 #canvas{
@@ -59,18 +61,34 @@ h2{
 	height: 300px;
 }
 
+#detail{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	
+}
+
 #shapes{
-	width: 100%;
-	overflow: hidden;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	overflow-y: scroll;
 }
 
 #shapes div{
-	float: left;
-	width: 23.75%;
-	height: 500px;
+	display: inline-block;
+	width: 23%;
+	height: 300px;
 	margin: 1% 0 0 1%;
 	overflow: hidden;
-	
+	cursor: pointer;
+	-moz-transition: background 0.3s;
+}
+
+#shapes div:hover{
+	background:#282828;
 }
 
 #shapes div svg{
