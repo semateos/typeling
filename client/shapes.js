@@ -30,7 +30,7 @@ Template.shapes.events({
 		
 		function after_birth(err, id){
 			
-			//typey.render('#' + dir_id);	
+			$('#shapes').scrollTop(0);	
 		}
 		
 		for(var i = 0; i < 4; i++){
@@ -38,20 +38,17 @@ Template.shapes.events({
 			typey.replicate(after_birth);
 		}
 		
-		//typey.mutate();
-		
-		//typey.store();
-		
-		//console.log(typey.svg.toSVG());
+		typey.cull();
 	},
 	
 	
 	'click #logo': function(event){
 		
+		var typey = new Typeling();
 		
 		function after_birth_2(err, id){
 			
-			//typey.render('#' + dir_id);	
+			$('#shapes').scrollTop(0);
 		}
 		
 		for(var i = 0; i < 4; i++){
@@ -61,6 +58,8 @@ Template.shapes.events({
 			typey.spawn(after_birth_2);
 			
 		}
+		
+		typey.cull();
 		
 	}
 
